@@ -9,13 +9,27 @@
     <script src="script2.js"></script>
     <script src="script3.js"></script>
     <script src="script4.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: whitesmoke;
+            margin: 10%;
+        }
+        .end{
+            padding-top: 20px;
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 28px;
+            font-size: 14px;
+            /* color: #cacdd2; */
+        }
 
+    </style>
 
 </head>
 <body>
-    <p id="demo"></p>
-
-
+    <h1>JavaScript Programming</h1>
+    
     <label for="">Insert a Number to Convert</label>
     <input id="input1" type="number" name="num" onblur="saveValue(this.value)">
     <select id="unit" name="conversion" >
@@ -44,10 +58,31 @@
     <input type="button" value="Capitalize" onclick="capitalize()">
     <input type="button" value="Sort" onclick="sort()">
     <input type="button" value="Reverse" onclick="reverse()">
-    <input type="button" value="Strip Blank">
-    <input type="button" value="Add Numbers">
-    <input type="button" value="Shuffle">
+    <input type="button" value="Strip Blank" onclick="stripBlank()">
+    <input type="button" value="Add Numbers" onclick="addNumber()">
+    <input type="button" value="Shuffle" onclick="shuffle()">
 
-   
+
+    <p id="demo" style="margin: 5%; float: left; width:70%; background-color: white; border-style: solid; padding: 10px 30px; text-align: center; border-color: coral;"></p><br>
+    <div style="padding-left: 78%; margin: 5%;">
+        <button id="blue" onclick="blue()" style="all: unset; cursor: pointer;">
+            <div style="float: left; width: 30px; height: 30px; background-color: #0a1d5b">&nbsp;</div> 
+        </button>
+        <button onclick="red()" style="all: unset; cursor: pointer;">
+            <div style="float: left; width: 30px; height: 30px; background-color: #9b0f2e">&nbsp;</div> 
+        </button> <br>
+        <button onclick="green()" style="all: unset; cursor: pointer;">
+            <div style="width: 30px; height: 30px; background-color: #006e1f">&nbsp;</div> 
+        </button>
+        <button onclick="black()" style="all: unset; cursor: pointer;">
+            <div style="width: 30px; height: 30px; background-color: #000000">&nbsp;</div> 
+        </button><br>
+    </div>
+
+
+    <center>
+		<p class="end">CopyRight By Rawhatur Rabbi</p>
+
+    </center>
 </body>
 </html>
