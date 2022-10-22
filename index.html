@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+    <script src="script3.js"></script>
+    <script src="script4.js"></script>
+
+
+</head>
+<body>
+    <p id="demo"></p>
+
+
+    <label for="">Insert a Number to Convert</label>
+    <input id="input1" type="number" name="num" onblur="saveValue(this.value)">
+    <select id="unit" name="conversion" >
+        <option value="lb to kg">lb to kg</option>
+        <option value="kg to lb">kg to lb</option>
+    </select>
+    <input type="button" value="Go:" onclick="submit()">
+    <label for="result" id="result"></label> <br> <br>  
+
+
+    <label for="">Series of Number</label>
+    <input type="text" id="series" onblur="saveNum(this.value)">
+    <br><br>
+    <label for="" >Max: <span id="max"></span></label><br><br>
+    <label for="" >Min: <span id="min"></span></label><br><br>
+    <label for="" >Sum: <span id="sum"></span></label><br><br>
+    <label for="" >Average: <span id="average"></span></label><br><br>
+    <label for="" >Reverse Order: <span id="reverse"></span></label><br><br>
+
+
+    <!-- <label for="w3review">Review of W3Schools:</label> -->
+
+    <textarea id="textarea" name="w3review" rows="10" cols="65"></textarea>
+    <br>
+    <input type="button" value="Clear It" onclick="eraseText()">
+    <input type="button" value="Capitalize" onclick="capitalize()">
+    <input type="button" value="Sort" onclick="sort()">
+    <input type="button" value="Reverse" onclick="reverse()">
+    <input type="button" value="Strip Blank">
+    <input type="button" value="Add Numbers">
+    <input type="button" value="Shuffle">
+
+   
+</body>
+</html>
