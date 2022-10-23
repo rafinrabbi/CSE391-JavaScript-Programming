@@ -21,7 +21,6 @@
             margin: 10px auto;
             line-height: 28px;
             font-size: 14px;
-            /* color: #cacdd2; */
         }
 
     </style>
@@ -29,7 +28,8 @@
 </head>
 <body>
     <h1>JavaScript Programming</h1>
-    
+    <h3>Hero Converter</h3>
+
     <label for="">Insert a Number to Convert</label>
     <input id="input1" type="number" name="num" onblur="saveValue(this.value)">
     <select id="unit" name="conversion" >
@@ -39,9 +39,9 @@
     <input type="button" value="Go:" onclick="submit()">
     <label for="result" id="result"></label> <br> <br>  
 
-
+    <br><br>
     <label for="">Series of Number</label>
-    <input type="text" id="series" onblur="saveNum(this.value)">
+    <input type="text" id="series" oninput="saveNum(this.value)">
     <br><br>
     <label for="" >Max: <span id="max"></span></label><br><br>
     <label for="" >Min: <span id="min"></span></label><br><br>
@@ -50,12 +50,11 @@
     <label for="" >Reverse Order: <span id="reverse"></span></label><br><br>
 
 
-    <!-- <label for="w3review">Review of W3Schools:</label> -->
-
+    <h3>Magic!!</h3>
     <textarea id="textarea" name="w3review" rows="10" cols="65"></textarea>
     <br>
     <input type="button" value="Clear It" onclick="eraseText()">
-    <input type="button" value="Capitalize" onclick="capitalize()">
+    <input id="renaming-toggle"type="button" value="Case Toggle" onclick="capitalize()">
     <input type="button" value="Sort" onclick="sort()">
     <input type="button" value="Reverse" onclick="reverse()">
     <input type="button" value="Strip Blank" onclick="stripBlank()">
@@ -82,7 +81,6 @@
 
     <center>
 		<p class="end">CopyRight By Rawhatur Rabbi</p>
-
     </center>
 </body>
 </html>
